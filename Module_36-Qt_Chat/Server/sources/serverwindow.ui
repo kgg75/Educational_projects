@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ServerWindow</class>
+ <widget class="QMainWindow" name="ServerWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>774</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Chat Server</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QTextEdit" name="textEdit">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="pushBtnConnections">
+          <property name="text">
+           <string>Подключения</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushBtnUsers">
+          <property name="text">
+           <string>Пользователи</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushBtnMessages">
+          <property name="text">
+           <string>Сообщения</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>774</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSetup">
+    <property name="title">
+     <string>Настройка</string>
+    </property>
+    <addaction name="menuFont"/>
+    <addaction name="separator"/>
+    <addaction name="menuWindowColor"/>
+    <addaction name="menuFontColor"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="menuAbout"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Управление</string>
+    </property>
+    <addaction name="menuClear"/>
+    <addaction name="separator"/>
+    <addaction name="menuConnections"/>
+    <addaction name="menuUsers"/>
+    <addaction name="menuMessages"/>
+    <addaction name="separator"/>
+    <addaction name="menuLock"/>
+    <addaction name="separator"/>
+    <addaction name="menuExit"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuSetup"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menuFont">
+   <property name="text">
+    <string>Шрифт...</string>
+   </property>
+  </action>
+  <action name="menuAbout">
+   <property name="text">
+    <string>О программе...</string>
+   </property>
+  </action>
+  <action name="menuExit">
+   <property name="text">
+    <string>Закрыть сервер...</string>
+   </property>
+  </action>
+  <action name="menuWindowColor">
+   <property name="text">
+    <string>Цвет окна...</string>
+   </property>
+  </action>
+  <action name="menuFontColor">
+   <property name="text">
+    <string>Цвет шрифта...</string>
+   </property>
+  </action>
+  <action name="menuConnections">
+   <property name="text">
+    <string>Подключения</string>
+   </property>
+  </action>
+  <action name="menuMessages">
+   <property name="text">
+    <string>Сообщения</string>
+   </property>
+  </action>
+  <action name="menuUsers">
+   <property name="text">
+    <string>Пользователи</string>
+   </property>
+  </action>
+  <action name="menuClear">
+   <property name="text">
+    <string>Очистить окно</string>
+   </property>
+  </action>
+  <action name="menuLock">
+   <property name="text">
+    <string>Заблокировать...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
