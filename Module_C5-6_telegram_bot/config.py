@@ -1,5 +1,5 @@
-TOKEN = '5270408420:AAEtNq7U78usGvE7H-3R2nfXGdaEPtGM73k'
-APIKEY = '8487aebe06fc9599b02e' # для free.currconv.com
+TOKEN = '***'
+APIKEY = '***' # для free.currconv.com
 
 keys = {
     'рубль': 'RUB',
